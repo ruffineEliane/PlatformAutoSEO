@@ -3,7 +3,7 @@ name: Deploy to Plesk
 on:
   push:
     branches:
-      - main  # Déploie quand on push sur "main"
+      - ruffine  # Déploie quand on push sur "main"
 
 jobs:
   deploy:
