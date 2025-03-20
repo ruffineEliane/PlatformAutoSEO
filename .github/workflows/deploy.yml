@@ -24,4 +24,4 @@ jobs:
 
       - name: Synchroniser avec le serveur Plesk
         run: |
-          rsync -avz --delete-after .next public package.json lucid-roentgen.217-154-14-66.plesk.page:/var/www/vhosts/lucid-roentgen.217-154-14-66.plesk.page/httpdocs
+          rsync -avz --delete-after .next server package.json lucid-roentgen.217-154-14-66.plesk.page:/var/www/vhosts/lucid-roentgen.217-154-14-66.plesk.page/httpdocs
