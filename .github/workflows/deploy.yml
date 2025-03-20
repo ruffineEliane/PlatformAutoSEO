@@ -3,8 +3,7 @@ name: Deploy to Plesk
 on:
   push:
     branches:
-      - main  # Déploie quand on push sur "main"
-
+      - master  # Déploie quand on push sur "main"
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,4 +24,4 @@ jobs:
 
       - name: Synchroniser avec le serveur Plesk
         run: |
-          rsync -avz --delete-after .next public package.json ton-utilisateur@ton-site.com:/var/www/vhosts/ton-domaine/httpdocs
+          rsync -avz --delete-after .next public package.json lucid-roentgen.217-154-14-66.plesk.page:/var/www/vhosts/lucid-roentgen.217-154-14-66.plesk.page/httpdocs
